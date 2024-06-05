@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TiltStage : MonoBehaviour
 {
-    public float tiltSpeed = 20f;
+    public float tiltSpeed = 30f;
 
     void Update()
     {
