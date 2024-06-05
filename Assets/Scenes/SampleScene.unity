@@ -455,7 +455,7 @@ GameObject:
   - component: {fileID: 918236251}
   m_Layer: 0
   m_Name: Button4
-  m_TagString: Button
+  m_TagString: Button4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 1037159251}
   m_Layer: 0
   m_Name: Button3
-  m_TagString: Button
+  m_TagString: Button3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1894,7 +1894,7 @@ GameObject:
   - component: {fileID: 1721790272}
   m_Layer: 0
   m_Name: Button5
-  m_TagString: Button
+  m_TagString: Button5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 1864860617}
   m_Layer: 0
   m_Name: Button6
-  m_TagString: Button
+  m_TagString: Button6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2546,7 +2546,7 @@ GameObject:
   - component: {fileID: 1988788781}
   m_Layer: 0
   m_Name: Button1
-  m_TagString: Button
+  m_TagString: Button1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2767,7 +2767,7 @@ GameObject:
   - component: {fileID: 2066256256}
   m_Layer: 0
   m_Name: Button2
-  m_TagString: Button
+  m_TagString: Button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2985,6 +2985,7 @@ GameObject:
   - component: {fileID: 2129999777}
   - component: {fileID: 2129999776}
   - component: {fileID: 2129999775}
+  - component: {fileID: 2129999780}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -3105,6 +3106,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2129999780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129999774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db78cb4f31f773442a4d9f3f61a8aa51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
