@@ -4,7 +4,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     // 次に押すべきボタンの番号
-    private int nextButtonNumber = 1;
+    public static int nextButtonNumber = 1;
     public AudioSource audioSource;
     public AudioClip buttonSound;
     void OnCollisionEnter(Collision collision)
@@ -23,10 +23,10 @@ public class BallController : MonoBehaviour
 
             // 一致したら、次に押すべきボタンの番号を更新
             nextButtonNumber++;
-            // 全てのボタンを押し終わったら、次の番号を1にリセット
+            // 全てのボタンを押し終わったら、何もしない
             if (nextButtonNumber > 6)
             {
-                nextButtonNumber = 1;
+
             }
             // ボタンを押したことを表示（デバッグ用）
             Debug.Log("Pressed button: " + currentTag);
