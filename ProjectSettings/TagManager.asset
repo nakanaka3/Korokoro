@@ -11,6 +11,7 @@ TagManager:
   - Button4
   - Button5
   - Button6
+  - Gate
   layers:
   - Default
   - TransparentFX
