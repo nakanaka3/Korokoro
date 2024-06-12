@@ -31,7 +31,7 @@ public class BallController : MonoBehaviour
 
             // 一致したら、次に押すべきボタンの番号を更新
             nextButtonNumber++;
-            // 全てのボタンを押し終わったら、何もしない
+            // 全てのボタンを押し終わった
             if (nextButtonNumber > 6)
             {
                 // 一致したら、音を鳴らす
