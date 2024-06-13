@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement; // シーン管理をするために必要
 
 public class Timecontroller : MonoBehaviour
 {
-    public float timeStart = 30;
+    public float timeStart = 30f;
     public Text textBox;
     private bool isGameOver = false;
 
@@ -15,7 +15,7 @@ public class Timecontroller : MonoBehaviour
 
     void Start()
     {
-        textBox.text = timeStart.ToString();
+        textBox.text = timeStart.ToString("F1");
 
         //シーン中のstateTextオブジェクトを取得（追加）
         this.stateText = GameObject.Find("GameResultText");
@@ -25,7 +25,7 @@ public class Timecontroller : MonoBehaviour
     {
 
         timeStart -= Time.deltaTime;
-        textBox.text = Mathf.Round(timeStart).ToString();
+        textBox.text = (Mathf.Round(timeStart * 10f) / 10f).ToString("F1");
 
         if (timeStart <= 0)
         {
