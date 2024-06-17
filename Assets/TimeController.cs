@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement; // シーン管理をするために必要
 
 public class Timecontroller : MonoBehaviour
 {
-    public float timeStart = 30f;
+    public float timeStart = 40f;
     public Text textBox;
     private bool isGameOver = false;
 

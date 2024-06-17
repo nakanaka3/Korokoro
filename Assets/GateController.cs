@@ -46,8 +46,10 @@ public class GateController : MonoBehaviour
         {
             Time.timeScale = 1; // 時間の流れを元に戻す
             //SampleSceneを読み込む（追加）
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("2ndStage");
             BallController.nextButtonNumber = 1;
+            gate.GetComponent<MeshRenderer>().enabled = true; // ゲートの見た目を戻します
+            gateCollider.enabled = true; // ゲートの物理的な障害物のコライダーを有効化します
         }
     }
 
