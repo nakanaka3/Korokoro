@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;  //（追加）
 
-public class GateController : MonoBehaviour
+public class GateController3rd : MonoBehaviour
 {
     public GameObject gate; // Set this in the inspector
     public Collider gateCollider; // ゲートの物理的な障害物のコライダーを参照します
@@ -49,7 +49,7 @@ public class GateController : MonoBehaviour
             {
                 Time.timeScale = 1; // 時間の流れを元に戻す
                 //SampleSceneを読み込む（追加）
-                SceneManager.LoadScene("2ndStage");
+                SceneManager.LoadScene("Ending");
                 BallController.nextButtonNumber = 1;
                 gate.GetComponent<MeshRenderer>().enabled = true; // ゲートの見た目を戻します
                 gateCollider.enabled = true; // ゲートの物理的な障害物のコライダーを有効化します
@@ -62,9 +62,9 @@ public class GateController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            Debug.Log("Clear");
+            Debug.Log("Goal");
             //stateTextにGAME CLEARを表示（追加）
-            this.stateText.GetComponent<Text>().text = "Clear!!";
+            this.stateText.GetComponent<Text>().text = "Goal!!";
 
             // 一致したら、音を鳴らす
             audioSource.PlayOneShot(GoalSound);

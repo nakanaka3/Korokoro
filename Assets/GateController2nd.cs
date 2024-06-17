@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;  //（追加）
 
-public class GateController : MonoBehaviour
+public class GateController2nd : MonoBehaviour
 {
     public GameObject gate; // Set this in the inspector
     public Collider gateCollider; // ゲートの物理的な障害物のコライダーを参照します
@@ -49,7 +49,7 @@ public class GateController : MonoBehaviour
             {
                 Time.timeScale = 1; // 時間の流れを元に戻す
                 //SampleSceneを読み込む（追加）
-                SceneManager.LoadScene("2ndStage");
+                SceneManager.LoadScene("3rdStage");
                 BallController.nextButtonNumber = 1;
                 gate.GetComponent<MeshRenderer>().enabled = true; // ゲートの見た目を戻します
                 gateCollider.enabled = true; // ゲートの物理的な障害物のコライダーを有効化します

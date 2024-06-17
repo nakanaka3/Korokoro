@@ -47,7 +47,7 @@ public class Timecontroller : MonoBehaviour
             {
                 Time.timeScale = 1; // ŠÔ‚Ì—¬‚ê‚ğŒ³‚É–ß‚·
                 //SampleScene‚ğ“Ç‚İ‚Şi’Ç‰Áj
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("IstStage");
                 BallController.nextButtonNumber = 1;
             }
         }
