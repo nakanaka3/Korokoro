@@ -14,7 +14,7 @@ public class GateController2nd : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip GoalSound;
-
+    public bool isClear = false;
 
     private void Start()
     {
@@ -42,18 +42,15 @@ public class GateController2nd : MonoBehaviour
             gate.GetComponent<MeshRenderer>().enabled = true; // ゲートの見た目を戻します
             gateCollider.enabled = true; // ゲートの物理的な障害物のコライダーを有効化します
         }
-        // もし音が鳴った場合
-        if (audioSource.isPlaying)
+
+        if ((isClear == true) && (Input.GetMouseButtonDown(0))) // マウスの左クリックを検出
         {
-            if (Input.GetMouseButtonDown(0)) // マウスの左クリックを検出
-            {
                 Time.timeScale = 1; // 時間の流れを元に戻す
                 //SampleSceneを読み込む（追加）
                 SceneManager.LoadScene("3rdStage");
                 BallController.nextButtonNumber = 1;
                 gate.GetComponent<MeshRenderer>().enabled = true; // ゲートの見た目を戻します
                 gateCollider.enabled = true; // ゲートの物理的な障害物のコライダーを有効化します
-            }
         }
     }
 
@@ -65,6 +62,8 @@ public class GateController2nd : MonoBehaviour
             Debug.Log("Clear");
             //stateTextにGAME CLEARを表示（追加）
             this.stateText.GetComponent<Text>().text = "Clear!!";
+
+            isClear = true;
 
             // 一致したら、音を鳴らす
             audioSource.PlayOneShot(GoalSound);

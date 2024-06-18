@@ -8,7 +8,7 @@ public class Timecontroller : MonoBehaviour
 {
     public float timeStart = 40f;
     public Text textBox;
-    private bool isGameOver = false;
+    public bool isGameOver = false;
 
     //ゲーム終了時に表示するテキスト（追加）
     private GameObject stateText;
@@ -47,7 +47,7 @@ public class Timecontroller : MonoBehaviour
             {
                 Time.timeScale = 1; // 時間の流れを元に戻す
                 //SampleSceneを読み込む（追加）
-                SceneManager.LoadScene("IstStage");
+                SceneManager.LoadScene("1stStage");
                 BallController.nextButtonNumber = 1;
             }
         }
